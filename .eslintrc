@@ -1,0 +1,57 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "plugin:import/typescript"
+  ],
+  "plugins": ["@typescript-eslint", "import"],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "rules": {
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "never"
+      }
+    ],
+    "object-curly-spacing": [
+      "error",
+      "always"
+    ],
+    "comma-spacing": [
+      "error",
+      { "before": false, "after": true }
+    ],
+    "@typescript-eslint/type-annotation-spacing": ["error", {
+      "after": true
+    }],
+    "no-trailing-spaces": "error",
+    "space-before-blocks": ["error", "always"],
+    "no-multi-spaces": ["error", { "ignoreEOLComments": true }],
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "padding-line-between-statements": [
+      "error",
+      { "blankLine": "always", "prev": "*", "next": ["function"] }
+    ],
+    "import/no-unresolved": "error",
+    "import/prefer-default-export": "off",
+    "quotes": ["error", "double", { "allowTemplateLiterals": true }],
+    "indent": ["error", 2],
+    "semi": ["error", "always"],
+    "@typescript-eslint/explicit-module-boundary-types": "off"
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {},
+      "node": {
+        "extensions": [".js", ".ts"]
+      }
+    }
+  }
+}
