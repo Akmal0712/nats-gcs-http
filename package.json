@@ -1,0 +1,41 @@
+{
+  "name": "apis_and_handler",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "http": "nodemon src/services/http/index.ts",
+    "handler": "nodemon src/services/handler/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@typescript-eslint/eslint-plugin": "^6.15.0",
+    "@typescript-eslint/parser": "^6.15.0",
+    "eslint": "^8.56.0",
+    "eslint-import-resolver-typescript": "^3.6.1",
+    "eslint-plugin-import": "^2.29.1",
+    "prettier": "^3.1.1"
+  },
+  "dependencies": {
+    "@google-cloud/storage": "^7.7.0",
+    "@types/bcrypt": "^5.0.2",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.3",
+    "express-jwt": "^8.4.1",
+    "jsonwebtoken": "^9.0.2",
+    "lodash": "^4.17.21",
+    "mongoose": "^8.0.3",
+    "multer": "^1.4.5-lts.1",
+    "nats": "^2.18.0",
+    "node-xlsx": "^0.23.0",
+    "nodemon": "^3.0.2",
+    "ts-node": "^10.9.2",
+    "xlsx": "^0.18.5"
+  }
+}
